@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+}
+a{
+    color: rgb(246, 132, 10);
+    /* text-align: center; */
+    text-decoration: underline;
+}
+
+p{
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.container{
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to top, rgba(0,0,0,.8),rgba(0,0,0,.6)),url("../images/13382.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.inner{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    width: 350px;
+    padding: 30px 20px 40px 20px;
+    background-color: rgb(7, 7, 7);
+    border-radius: 10px;
+}
+.box input:focus ~ label{
+    top: 5px;
+    font-size: 10px;
+}
+form .box{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin-bottom: 14px;
+    border-radius: 5px ;
+    overflow: hidden;
+}
+.box input{
+    width: 100%;
+    height: 100%;
+    border:none;
+    outline: none;
+    background-color: rgb(19, 21, 22);
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+form h1{
+    margin: 20px 0;
+    text-align: center;
+}
+form button{
+    width: 100%;
+    padding: 14px 0;
+    border: none;
+    background-color: rgb(255, 115, 0);
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.box label{
+    position: absolute;
+    top: 15px ;
+    left: 21px;
+    transition: all .3s;
+}
+.box input:focus{
+    border:2px solid rgb(255, 170, 0)
+}
+.box input:focus ~ label{
+    color:rgb(255, 170, 0);
+    
+}
+h1{
+    color: rgb(255, 167, 2);
+    font-size: 2.5rem;
+}
